@@ -1,0 +1,66 @@
+/* Simple responsive CSS for Hillary Web Solutions */
+:root{
+  --accent:#4f46e5;
+  --bg:#f7f7fb;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --maxw:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#111}
+.container{max-width:var(--maxw);margin:0 auto;padding:24px}
+.site-header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:50}
+.site-header .container{display:flex;align-items:center;gap:16px}
+.brand{font-weight:700;color:var(--accent);font-size:18px;text-decoration:none}
+.nav{margin-left:auto;display:flex;gap:16px}
+.nav a{color:#333;text-decoration:none}
+.cta{margin-left:12px;background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+.nav-toggle{display:none;background:none;border:0;font-size:20px;margin-left:8px}
+.hero{padding:36px 0;background:linear-gradient(180deg,#fff,transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.hero-text h1{font-size:34px;margin:0 0 12px}
+.hero-text p{color:var(--muted);margin:0 0 12px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid #ddd;color:#111}
+.stats{display:flex;gap:12px;margin-top:16px;list-style:none;padding:0}
+.stats li{background:var(--card);padding:12px;border-radius:8px;min-width:120px}
+.hero-image img{width:100%;border-radius:12px;object-fit:cover;height:260px}
+
+.section{padding:28px 0}
+.muted{color:var(--muted)}
+
+.grid{display:grid;gap:16px}
+.cols-4{grid-template-columns:repeat(1,1fr)}
+.cols-3{grid-template-columns:repeat(1,1fr)}
+.cols-2{grid-template-columns:repeat(1,1fr)}
+@media(min-width:700px){
+  .cols-4{grid-template-columns:repeat(4,1fr)}
+  .cols-3{grid-template-columns:repeat(3,1fr)}
+  .cols-2{grid-template-columns:repeat(2,1fr)}
+  .hero-grid{grid-template-columns:1fr 1fr}
+  .nav-toggle{display:none}
+  .nav{display:flex}
+}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.05)}
+.portfolio-card .thumb{height:120px;background:#f3f4f6;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-weight:600}
+.price-card{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.price{font-weight:800;font-size:22px;color:#111}
+.price-card.featured{transform:translateY(-6px);box-shadow:0 10px 25px rgba(79,70,229,0.08)}
+
+.testimonial{background:var(--card);padding:20px;border-radius:12px}
+
+.contact-grid{align-items:start}
+.contact-form label{display:block;margin-bottom:12px;font-size:14px}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px;margin-top:6px}
+.form-status{margin-top:10px;font-size:14px;color:var(--muted)}
+
+.site-footer{background:#fff;border-top:1px solid #eee;margin-top:40px}
+.footer-grid{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:16px 24px}
+.plain-list{list-style:none;padding:0;margin:0}
+.small{color:var(--muted);font-size:13px}
+
+/* Mobile nav toggle handling */
+@media(max-width:699px){
+  .nav{display:none}
+  .nav-toggle{display:block}
+}

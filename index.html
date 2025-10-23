@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hillary Web Solutions — Websites that grow your business</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Hillary Web Solutions — We build professional websites that help businesses grow.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Hillary Web Solutions</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="#contact">Get Started</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Websites that grow your business</h1>
+          <p>We design fast, mobile-friendly websites, set up e-commerce, and improve your visibility so you get more customers.</p>
+          <p class="hero-actions">
+            <a class="btn" href="#contact">Book a free consult</a>
+            <a class="btn ghost" href="#portfolio">See our work</a>
+          </p>
+          <ul class="stats">
+            <li><strong>+58%</strong><span>Avg. leads increase</span></li>
+            <li><strong>Top 3</strong><span>Common SEO rank</span></li>
+          </ul>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero.svg" alt="Workspace">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container section">
+      <h2>Services</h2>
+      <p class="muted">Everything you need to attract customers and scale online.</p>
+      <div class="grid cols-4">
+        <div class="card"><h3>Website Design</h3><p>Custom, responsive sites built to convert visitors into customers.</p></div>
+        <div class="card"><h3>SEO & Growth</h3><p>Improve search visibility and attract qualified leads.</p></div>
+        <div class="card"><h3>E-commerce</h3><p>Secure online shops with payments & inventory.</p></div>
+        <div class="card"><h3>Maintenance</h3><p>Backups, updates and performance monitoring.</p></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="container section">
+      <h2>Portfolio</h2>
+      <p class="muted">Selected projects with measurable results.</p>
+      <div class="grid cols-3">
+        <div class="portfolio-card"><div class="thumb">Bakery Shop</div><div class="meta">E-commerce & Local SEO</div></div>
+        <div class="portfolio-card"><div class="thumb">Yoga Studio</div><div class="meta">Bookings & Memberships</div></div>
+        <div class="portfolio-card"><div class="thumb">Tech Consultancy</div><div class="meta">Lead generation & Blog</div></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="container section">
+      <h2>Pricing</h2>
+      <p class="muted">Packages for different stages. Custom quotes available.</p>
+      <div class="grid cols-3">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <div class="price">R1,600</div>
+          <ul><li>One-page site</li><li>Mobile-friendly</li><li>Basic SEO</li></ul>
+          <a class="btn" href="#contact">Choose Starter</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Growth</h3>
+          <div class="price">R2,499</div>
+          <ul><li>Multi-page</li><li>Contact forms</li><li>Analytics</li></ul>
+          <a class="btn" href="#contact">Choose Growth</a>
+        </div>
+        <div class="price-card">
+          <h3>Pro</h3>
+          <div class="price">R4,200</div>
+          <ul><li>E-commerce</li><li>Advanced SEO</li><li>Monthly support</li></ul>
+          <a class="btn" href="#contact">Choose Pro</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container section">
+      <h2>Testimonials</h2>
+      <div class="grid cols-2">
+        <blockquote class="testimonial">“Our enquiries doubled in 3 months. The team delivered fast.” <cite>— Thabo M., Bakery owner</cite></blockquote>
+        <blockquote class="testimonial">“From design to SEO, the results were immediate. Highly recommended.” <cite>— Aisha K., Yoga Studio</cite></blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact Us</h2>
+      <p class="muted">Ready to grow? Send a message and we'll set up a free consult.</p>
+
+      <div class="grid cols-2 contact-grid">
+        <form id="contactForm" class="card contact-form">
+          <label>Full name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell us about your business and goals" required></textarea></label>
+          <button type="submit" class="btn">Send message</button>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </form>
+
+        <aside class="card contact-info">
+          <h3>Other ways to reach us</h3>
+          <ul class="plain-list">
+            <li><strong>Email:</strong> hello@hillarywebsolutions.co.za</li>
+            <li><strong>WhatsApp:</strong> +27 67 356 0392</li>
+            <li><strong>Phone:</strong> +27 78 000 4321</li>
+            <li><strong>Address:</strong> Johannesburg, South Africa</li>
+            
+          </ul>
+
+          <h4>Why choose us?</h4>
+          <ul class="plain-list">
+            <li>Local South African market knowledge</li>
+            <li>Clear pricing and measurable goals</li>
+            <li>Fast turnaround and friendly support</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="brand">Hillary Web Solutions</div>
+      <div class="small">© 2025 Hillary Web Solutions — All rights reserved</div>
+      <div class="links"><a href="#">Privacy</a> <a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
